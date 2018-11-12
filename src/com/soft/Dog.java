@@ -15,20 +15,28 @@ public class Dog {
     public Dog() {
     }
 
-    public Dog(String name) {
-        this.name = name;
-    }
-
     public Dog(String name, String breed, int age) {
         this.name = name;
         this.breed = breed;
         this.age = age;
     }
 
-
     boolean sameNames(Dog dog) {
         if(this.name == dog.name) {
             return true;
         }return false;
+    }
+    boolean olderThen(Dog dog) {
+        if(this.age > dog.age) {
+            return true;
+        } return false;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getBreed() {
+        return breed;
     }
 }
